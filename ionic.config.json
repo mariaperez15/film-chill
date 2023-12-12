@@ -1,0 +1,7 @@
+{
+  "name": "filmAndChillApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
