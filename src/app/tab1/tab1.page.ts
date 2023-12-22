@@ -15,6 +15,7 @@ export class Tab1Page implements OnInit{
   currentPage = 1;
   enFavoritos: boolean = false;
   public results = [...this.films];
+  isSearching: boolean = true;
 
 
   constructor(
@@ -64,6 +65,7 @@ export class Tab1Page implements OnInit{
     console.log("search ejecutandose")
     console.log("estas buscando: " +  query)
     console.log(this.results)
+    this.isSearching = event.target.value.trim().length > 0;
 }
 
 }

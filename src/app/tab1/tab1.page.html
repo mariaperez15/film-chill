@@ -6,7 +6,6 @@
         <h3 class="titulo">Tendencias de la semana</h3>
       </ion-col>
       <ion-col size="3">
-        <!-- <app-search></app-search> -->
         <ion-searchbar 
           placeholder="Buscar" 
           [debounce]="1000" 
@@ -36,12 +35,10 @@
   </div>
   
   <ng-template #noResults>
-    <!-- Muestra este mensaje solo cuando no hay resultados -->
     <p>No hay resultados</p>
   </ng-template>
 
-    <!-- Oculta completamente app-films e ion-infinite-scroll cuando no hay resultados -->
-    <div *ngIf="results.length === 0">
+    <div [hidden]="results.length > 0 || !isSearching">
       <app-films 
         [films]="films"
         [enFavoritos]="enFavoritos"
