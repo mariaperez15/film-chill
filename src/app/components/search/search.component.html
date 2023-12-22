@@ -1,0 +1,11 @@
+<ion-searchbar 
+    placeholder="Buscar" 
+    [debounce]="1000" 
+    animated="true" 
+    (ionChange)="searchFilm($event)">
+</ion-searchbar>
+
+  <ion-item *ngFor="let result of results">
+    <ion-label>{{ result.original_title }}</ion-label>
+  </ion-item>
+

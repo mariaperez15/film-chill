@@ -1,17 +1,13 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title>Mi lista</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <h2>Mi lista</h2>
+  <app-films *ngIf="favoritosService.favoritos.length > 0"
+    [enFavoritos]="true"
+    [films]="favoritosService.favoritos"></app-films>
+  <h3 class="vacio" *ngIf="favoritosService.favoritos.length === 0">Todavía no tienes nada en tu lista</h3>
 </ion-content>

@@ -1,0 +1,23 @@
+<ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size = "3">
+        <ion-img  alt="'film.original_title'" [src]="'https://image.tmdb.org/t/p/w500' + film.poster_path"></ion-img>
+        <ion-card-subtitle>{{film.vote_average}}<ion-icon name="star"></ion-icon></ion-card-subtitle>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-header>
+            <ion-card-title>{{film.original_title ? film.original_title : film.name }}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+            {{film.overview |slice:0:100 }}{{ film.overview.length > 100 ? '...' : '' }}
+        </ion-card-content>
+        <ion-icon class="heart" name="heart" (click)="like()"
+        [style.color]="favoritosService.esFavorito(film) ? 'red' : 'grey'"
+        [ngClass]="{'clicked': favoritosService.esFavorito(film)}"></ion-icon>
+          <ion-button size="small" color="light">Ver más</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
