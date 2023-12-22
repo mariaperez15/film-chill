@@ -22,7 +22,7 @@
 
 <ion-content [fullscreen]="true">
 
-  <div *ngIf="results.length > 0; else noResults">
+  <div *ngIf="results.length > 0">
     <div *ngFor="let film of results">
       <ion-grid fixed>
         <ion-row>
@@ -34,11 +34,9 @@
     </div>
   </div>
   
-  <ng-template #noResults>
-    <p>No hay resultados</p>
-  </ng-template>
+  <p *ngIf="isSearching && results.length === 0">No hay resultados</p>
 
-    <div [hidden]="results.length > 0 || !isSearching">
+    <div [hidden]="results.length > 0 || isSearching">
       <app-films 
         [films]="films"
         [enFavoritos]="enFavoritos"
