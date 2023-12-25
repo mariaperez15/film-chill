@@ -9,8 +9,7 @@
         <ion-searchbar 
           placeholder="Buscar" 
           [debounce]="1000" 
-          animated="true" 
-          (ionChange)="searchFilm($event)">
+          (ionInput)="searchFilm($event)">
         </ion-searchbar>
       </ion-col>
     </ion-row>

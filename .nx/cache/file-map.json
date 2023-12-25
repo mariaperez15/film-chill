@@ -68,12 +68,16 @@
         "hash": "18210278994710539225"
       },
       {
+        "file": ".gitattributes",
+        "hash": "8207937369485138236"
+      },
+      {
         "file": ".gitignore",
         "hash": "91109559695469517"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "2115816824453118712"
+        "hash": "12965674676375461235"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -245,7 +249,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.html",
-        "hash": "4747701751176772723"
+        "hash": "12287121067706517248"
       },
       {
         "file": "src/app/tab1/tab1.page.scss",
@@ -257,7 +261,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.ts",
-        "hash": "13927904413289168456"
+        "hash": "5834494113102697924"
       },
       {
         "file": "src/app/tab2/tab2-routing.module.ts",
