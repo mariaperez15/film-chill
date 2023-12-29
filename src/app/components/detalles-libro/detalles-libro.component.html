@@ -1,0 +1,33 @@
+
+<ion-content>
+  <ion-card *ngIf="movie; else noMovie" >
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3">
+          <img alt="Silhouette of mountains" [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" />
+        </ion-col>
+        <ion-col>
+          <ion-card-header>
+            <ion-card-title>{{movie.original_title ? movie.original_title : movie.name}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{movie.overview}}</p><br>
+            <p>Origin language: {{movie.original_language}} </p>
+            <p>Fecha de estreno: {{movie.release_date}} </p>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <ng-template #noMovie>
+      <ion-card [hidden]="!movie">
+        <ion-card-content class="no-movie-message">
+          Lamentamos informarte que esta película no está disponible, pero no te preocupes, porque... ¡tenemos muchas otras!
+        </ion-card-content>
+    </ion-card>
+  </ng-template>
+</ion-content>
+
+
+
+

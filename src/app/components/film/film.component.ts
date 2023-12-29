@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Film } from 'src/app/interfaces/interfaces';
 import { FavoritosService } from 'src/app/services/favoritos.service';
+
 
 @Component({
   selector: 'app-film',
@@ -15,11 +16,16 @@ export class FilmComponent  implements OnInit {
 
 
 
-  constructor(public favoritosService: FavoritosService) { }
+  constructor(
+      public favoritosService: FavoritosService) { }
 
   ngOnInit() {}
 
   like(){
     this.favoritosService.guardarFavorito(this.film);
   }
+
+  // openMovieDetails(id: number) {
+  //   this.router.navigate(['/detallespelicula', id]);
+  // }
 }

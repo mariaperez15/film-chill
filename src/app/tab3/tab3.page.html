@@ -5,12 +5,50 @@
 </ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <h2>Vistas</h2>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <ion-card>
+        <ion-card-title (click)="getRomanceMovies()">Romance</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <ion-card-title (click)="getThrillerMovies">Thriller</ion-card-title>
+      </ion-card>
+    </ion-col> 
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <ion-card>
+        <ion-card-title (click)="getDramaMovies()">Drama</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <ion-card-title (click)="getActionMovies()">Action</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <ion-card>
+        <ion-card-title (click)="getAdventureMovies()">Adventure</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-card>
+        <ion-card-title (click)="getComediaMovies()">Comedia</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
 </ion-content>

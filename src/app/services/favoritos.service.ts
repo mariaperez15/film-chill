@@ -17,15 +17,7 @@ export class FavoritosService {
     // this.cargarFavoritosClickeados();
     this.cargarFavoritos();
   }
-
-  // async cargarFavoritosClickeados(){
-  //   const clickeados = await this.storage.get('favoritosClickeados');
-
-  //   if (clickeados){
-  //     this.favoritosClickeados = clickeados;
-  //   }
-  // }
-
+  
   esFavorito(film: Film): boolean {
     return this.favoritos.some(pelicula => pelicula.id === film.id);
   }

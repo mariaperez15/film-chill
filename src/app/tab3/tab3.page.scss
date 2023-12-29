@@ -6,4 +6,20 @@ ion-content {
         color: rgb(255, 198, 207);
         display: inline-block; 
     }
-  }
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+ion-card{
+    height: 4rem;
+    cursor: pointer;
+}
+ion-card{
+    text-align: center; 
+}
+
+
+
+
