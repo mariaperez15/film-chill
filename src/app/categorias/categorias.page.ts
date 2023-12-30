@@ -95,7 +95,7 @@ export class CategoriasPage implements OnInit {
 
     console.log('search ejecutandose');
     console.log('Estas buscando: ' + query);
-    console.log(this.results[0]);
+    console.log(this.results);
   }  
 
 
