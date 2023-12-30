@@ -15,9 +15,8 @@ export class CategoriasPage implements OnInit {
 
   filmsPorGenero: Film[] = [];
   movies: Film[] = [];
-  @Input() film!: Film;
-  @Input() enFavoritos: boolean = false;
   tituloCategoria: string | undefined;
+  
 
   constructor(
       private filmsApi: FilmsApiService, 
@@ -30,18 +29,13 @@ export class CategoriasPage implements OnInit {
     this.route.params.subscribe(params => {
       const categoriaId = +params['id'];
       console.log(categoriaId);
-      this.getFilmPorGenero(categoriaId);
-      
+      this.getFilmPorGenero(categoriaId);   
     });
-
-    // this.tituloCategoria = this.route.snapshot.paramMap.get('titulo') ?? undefined;
-    // console.log(this.tituloCategoria);
 
     this.route.paramMap.subscribe(paramMap => {
       this.tituloCategoria = paramMap.get('titulo') ?? undefined;
       console.log(this.tituloCategoria);
     });
-
   }
   
 
@@ -50,7 +44,6 @@ export class CategoriasPage implements OnInit {
       const categoriaId = +params['id'];
       this.getFilmPorGenero(categoriaId, event);
     });
-
   }
 
   getFilmPorGenero(id: number, event?: any){
@@ -72,7 +65,8 @@ export class CategoriasPage implements OnInit {
     });
   }
 
-  like(){
-    this.favoritosService.guardarFavorito(this.film);
+  like(film: Film){
+    console.log(film);
+    this.favoritosService.guardarFavorito(film);
   }
 }

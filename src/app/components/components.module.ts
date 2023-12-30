@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     FilmComponent,
     FilmsComponent,
-    DetallesLibroComponent
+    DetallesLibroComponent,
   ],
   imports: [
     CommonModule,
@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
   exports: [
     FilmsComponent,
     FilmComponent,
-    DetallesLibroComponent
+    DetallesLibroComponent,
   ]
 })
 export class ComponentsModule { }
