@@ -1,7 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Respuesta } from '../interfaces/interfaces'
+import { Film, Respuesta } from '../interfaces/interfaces'
+import { map } from 'rxjs/operators';
 
 
 const apiKey= environment.apiKey;
@@ -26,6 +27,22 @@ export class FilmsApiService {
   obtenerfilms(){
     this.pagina++;
     return this.http.get<Respuesta>(apiUrl + `trending/all/week?language=en-US&page=${this.pagina}`, options)
+  }
+
+  getDetails(id: number) {
+    return this.obtenerfilms().pipe(
+      map((respuesta: Respuesta) => respuesta.results),
+      map((films: Film[]) => films.find((film) => film.id === id))
+    );
+  }
+
+  getFilmById(id: number) {
+    return this.http.get<Film>(`${apiUrl}movie/${id}?language=en-US`, options);
+  }
+
+  obtenerfilmsPorGenero(generoId: number) {
+    this.pagina++;
+    return this.http.get<Respuesta>(`${apiUrl}discover/movie?with_genres=${generoId}&page=${this.pagina}`, options);
   }
 
 }

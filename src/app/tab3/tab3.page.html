@@ -1,16 +1,132 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Vistas</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="titulo">Films por categorías</ion-title>
   </ion-toolbar>
-</ion-header> -->
+</ion-header> 
 
 <ion-content [fullscreen]="true">
-  <h2>Vistas</h2>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(10749, 'Romance')">
+        <ion-card-title>Romance</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(10752, 'Guerra')">
+        <ion-card-title>Guerra</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-card (click)="navigateToCategorias(53, 'Thriller')">
+        <ion-card-title>Thriller</ion-card-title>
+      </ion-card>
+    </ion-col> 
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(18, 'Drama')">
+        <ion-card-title>Drama</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(37, 'Del oeste')">
+        <ion-card-title>Del oeste</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-card (click)="navigateToCategorias(28, 'Acción')">
+        <ion-card-title>Acción</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(12, 'Aventura')">
+        <ion-card-title>Aventura</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(35, 'Comedia')">
+        <ion-card-title>Comedia</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-card (click)="navigateToCategorias(80, 'Crimen')">
+        <ion-card-title>Crimen</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(10751, 'Familiar')">
+        <ion-card-title>Familiar</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(99, 'Documentales')">
+        <ion-card-title>Documentales</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-card (click)="navigateToCategorias(14, 'Fantasía')">
+        <ion-card-title>Fantasía</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(36, 'Historia')">
+        <ion-card-title>Historia</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(10402, 'Musical')">
+        <ion-card-title>Musical</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-card (click)="navigateToCategorias(9648, 'Misterio')">
+        <ion-card-title>Misterio</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(27, 'Terror')">
+        <ion-card-title>Terror</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2" class="ion-margin-end">
+      <ion-card (click)="navigateToCategorias(878, 'Ciencia ficción')">
+        <ion-card-title>Ciencia ficción</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-card (click)="navigateToCategorias(10770, 'Películas TV')">
+        <ion-card-title>Películas TV</ion-card-title>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
 </ion-content>

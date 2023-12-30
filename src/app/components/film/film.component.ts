@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Film } from 'src/app/interfaces/interfaces';
 import { FavoritosService } from 'src/app/services/favoritos.service';
+
 
 @Component({
   selector: 'app-film',
@@ -13,8 +14,6 @@ export class FilmComponent  implements OnInit {
   @Input() film!: Film;
   @Input() enFavoritos: boolean = false;
 
-
-
   constructor(public favoritosService: FavoritosService) { }
 
   ngOnInit() {}
@@ -22,4 +21,5 @@ export class FilmComponent  implements OnInit {
   like(){
     this.favoritosService.guardarFavorito(this.film);
   }
+
 }

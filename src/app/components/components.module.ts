@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 
 import { FilmsComponent } from './films/films.component';
 import { FilmComponent } from './film/film.component';
-import { SearchComponent } from './search/search.component';
+import { DetallesLibroComponent } from './detalles-libro/detalles-libro.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,18 +14,19 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     FilmComponent,
     FilmsComponent,
-    SearchComponent
+    DetallesLibroComponent,
   ],
   imports: [
     CommonModule,
     IonicModule,
     CommonModule,
     FormsModule,
+    RouterModule
   ],
   exports: [
     FilmsComponent,
     FilmComponent,
-    SearchComponent
+    DetallesLibroComponent,
   ]
 })
 export class ComponentsModule { }

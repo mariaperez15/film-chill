@@ -1,13 +1,33 @@
 ion-content {
     --background: rgb(24, 23, 23);
-    text-align: center; /* Alinea el contenido del ion-content al centro */
+    
 
     h2 {
         color: rgb(255, 198, 207);
         display: inline-block; 
+        margin-top: -1rem;
+        font-size: 2rem;
     }
 
     .vacio{
         color: white;
+        text-align: center;
+        margin-top: 3rem;
     }
-  }
+}
+.arrow{
+    color:white;
+    margin-left: 1.2rem;
+    font-size: 2.9rem;
+}
+
+.miLista{
+    font-size: 1.7rem;
+    margin-top: 0.3rem;
+}
+ion-toolbar{
+    text-align: center; 
+    height: 4rem;
+    --opacity: 95%;
+}
+

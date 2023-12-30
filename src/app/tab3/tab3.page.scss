@@ -6,4 +6,32 @@ ion-content {
         color: rgb(255, 198, 207);
         display: inline-block; 
     }
-  }
+}
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+ion-card{
+    height: 4rem;
+    cursor: pointer;
+}
+ion-card{
+    text-align: center; 
+}
+.titulo{
+    font-size: 1.7rem;
+    margin-top: 0.3rem;
+}
+ion-toolbar{
+    text-align: center; 
+    height: 4rem;
+    --opacity: 95%;
+}
+ion-card-title{
+    margin-top: 1rem;
+}
+
+
+
+
+

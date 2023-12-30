@@ -1,0 +1,33 @@
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+ion-card{
+    background-color: rgb(15, 15, 15);
+}
+ion-content {
+    --background: rgb(24, 23, 23);
+
+}
+ion-card-title{
+    color: white;
+    font-size: 2rem;
+}
+ion-card-content p{
+    font-size: 1.2rem;
+}
+.no-movie-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.25rem;
+    color: white;
+}
+ion-card{
+    margin-top: 1rem;
+}
+.arrow{
+    color:white;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
