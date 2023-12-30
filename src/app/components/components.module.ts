@@ -7,6 +7,7 @@ import { FilmsComponent } from './films/films.component';
 import { FilmComponent } from './film/film.component';
 import { DetallesLibroComponent } from './detalles-libro/detalles-libro.component';
 import { RouterModule } from '@angular/router';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -15,6 +16,7 @@ import { RouterModule } from '@angular/router';
     FilmComponent,
     FilmsComponent,
     DetallesLibroComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,
@@ -27,6 +29,7 @@ import { RouterModule } from '@angular/router';
     FilmsComponent,
     FilmComponent,
     DetallesLibroComponent,
+    SearchComponent
   ]
 })
 export class ComponentsModule { }

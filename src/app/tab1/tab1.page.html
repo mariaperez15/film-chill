@@ -6,12 +6,7 @@
         <h3 class="titulo">Tendencias de la semana</h3>
       </ion-col>
       <ion-col size="3" size-md="3" size-sm="4" size-xs="12">
-        <ion-searchbar 
-          placeholder="Buscar" 
-          [debounce]="1000" 
-          (ionInput)="searchFilm($event)"
-          color="medium">
-        </ion-searchbar>
+        <app-search (search)="searchFilm($event)"></app-search>
       </ion-col>
     </ion-row>
   </ion-grid>

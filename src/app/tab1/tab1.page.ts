@@ -55,19 +55,16 @@ export class Tab1Page implements OnInit{
     this.cargarFilms(event);
   }
   
-  searchFilm(event: any) {
-    console.log(this.films);
-    const query = event.target.value.trim().toLowerCase();
+  searchFilm(query: string) {
     this.isSearching = true;
-    console.log("isSearching:", this.isSearching);
     this.results = this.films.filter((film: Film) => {
-        const titleToSearch = film.original_title ? film.original_title.toLowerCase() : (film.name ? film.name.toLowerCase() : '');
-        return titleToSearch.includes(query);
+      const titleToSearch = film.original_title ? film.original_title.toLowerCase() : film.name ? film.name.toLowerCase() : '';
+      return titleToSearch.includes(query);
     });
-    console.log("Results después de la búsqueda:", this.results);
-    console.log("search ejecutandose")
-    console.log("estas buscando: " +  query)
-    console.log(this.results)
-}
+    console.log('Results después de la búsqueda:', this.results);
+    console.log('search ejecutandose');
+    console.log('estas buscando: ' + query);
+    console.log(this.results);
+  } 
 
 }
