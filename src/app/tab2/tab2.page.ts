@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FavoritosService } from '../services/favoritos.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-tab2',
@@ -8,6 +9,13 @@ import { FavoritosService } from '../services/favoritos.service';
 })
 export class Tab2Page {
 
-  constructor(public favoritosService: FavoritosService) {}
+  constructor(
+    public favoritosService: FavoritosService,
+    private location: Location
+  ) {}
+
+  goBack(){
+    this.location.back();
+  }
 
 }

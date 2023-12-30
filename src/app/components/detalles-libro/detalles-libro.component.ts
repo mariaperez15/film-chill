@@ -1,9 +1,9 @@
 import { Component, Input, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { take, tap } from 'rxjs/operators';
 import { Film } from 'src/app/interfaces/interfaces';
 import { FavoritosService } from 'src/app/services/favoritos.service';
 import { FilmsApiService } from 'src/app/services/films-api.service';
+import { Location } from '@angular/common';
 
 
 @Component({
@@ -21,7 +21,8 @@ export class DetallesLibroComponent  implements OnInit {
   constructor(
       public favoritosService: FavoritosService, 
       private route: ActivatedRoute, 
-      private filmsApi: FilmsApiService) {}
+      private filmsApi: FilmsApiService,
+      private location: Location) {}
 
       ngOnInit() {
         this.route.params.subscribe(params => {
@@ -38,5 +39,8 @@ export class DetallesLibroComponent  implements OnInit {
     this.favoritosService.guardarFavorito(this.film);
   }
 
+  goBack(){
+    this.location.back();
+  }
 
 }

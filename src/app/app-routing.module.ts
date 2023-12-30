@@ -7,13 +7,9 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  // {
-  //   path: 'detalleslibro',
-  //   loadChildren: () => import('./detalles-libro/detalles-libro.module').then( m => m.DetallesLibroPageModule)
-  // },
   { path: 'detallelibro/:id', component: DetallesLibroComponent },
   {
-    path: 'categorias',
+    path: 'categorias/:id',
     loadChildren: () => import('./categorias/categorias.module').then( m => m.CategoriasPageModule)
   },
 ];

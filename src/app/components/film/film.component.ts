@@ -14,10 +14,7 @@ export class FilmComponent  implements OnInit {
   @Input() film!: Film;
   @Input() enFavoritos: boolean = false;
 
-
-
-  constructor(
-      public favoritosService: FavoritosService) { }
+  constructor(public favoritosService: FavoritosService) { }
 
   ngOnInit() {}
 
@@ -25,7 +22,4 @@ export class FilmComponent  implements OnInit {
     this.favoritosService.guardarFavorito(this.film);
   }
 
-  // openMovieDetails(id: number) {
-  //   this.router.navigate(['/detallespelicula', id]);
-  // }
 }

@@ -7,7 +7,6 @@ ion-content {
         display: inline-block; 
     }
 }
-
 ion-card-header.ios {
     display: flex;
     flex-flow: column-reverse;
@@ -19,6 +18,23 @@ ion-card{
 ion-card{
     text-align: center; 
 }
+.titulo{
+    font-size: 1.7rem;
+    margin-top: 0.3rem;
+}
+ion-toolbar{
+    text-align: center; 
+    height: 4rem;
+}
+ion-card-title{
+    margin-top: 1rem;
+}
+// ion-card{
+//     --background: rgb(68, 68, 68);
+// }
+// ion-card-title{
+//     color: white;
+// }
 
 
 
