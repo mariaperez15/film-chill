@@ -16,6 +16,9 @@ export class CategoriasPage implements OnInit {
   filmsPorGenero: Film[] = [];
   movies: Film[] = [];
   tituloCategoria: string | undefined;
+  public results = [...this.movies];
+  isSearching: boolean = false;
+  enFavoritos: boolean = false; 
   
 
   constructor(
@@ -69,5 +72,20 @@ export class CategoriasPage implements OnInit {
     console.log(film);
     this.favoritosService.guardarFavorito(film);
   }
+
+  searchFilm(event: any) {
+    console.log(event);
+    const query = event.target.value.trim().toLowerCase();
+    this.isSearching = true;
+    console.log("isSearching:", this.isSearching);
+    this.results = this.movies.filter((film: Film) => {
+        const titleToSearch = film.original_title ? film.original_title.toLowerCase() : (film.name ? film.name.toLowerCase() : '');
+        return titleToSearch.includes(query);
+    });
+    console.log("Results después de la búsqueda:", this.results);
+    console.log("search ejecutandose")
+    console.log("estas buscando: " +  query)
+    console.log(this.results)
+}
   
 }

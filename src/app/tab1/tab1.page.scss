@@ -13,8 +13,11 @@ ion-content {
     margin-left: 20rem;
     font-size: 1.7rem;
 }
-
 ion-toolbar{
     --opacity: 95%;
 
+}
+.noResults{
+    color: white;
+    font-size: 1.3rem;
 }

@@ -12,45 +12,93 @@
         <ion-col>
           <ion-title class="titulo">{{ tituloCategoria }}</ion-title>
         </ion-col>
+        <ion-col size="3" size-md="3" size-sm="4" size-xs="12">
+          <ion-searchbar 
+            placeholder="Buscar" 
+            [debounce]="1000" 
+            (ionInput)="searchFilm($event)"
+            color="medium">
+          </ion-searchbar>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="12" size-lg="6" size-md="12" size-sm="12" size-xs="12" *ngFor="let film of filmsPorGenero">
-        <ion-card>
-          <ion-grid>
-            <ion-row>
-              <ion-col size = "3">
-                <ion-img  alt="'film.original_title'" [src]="'https://image.tmdb.org/t/p/w500' + film.poster_path"></ion-img>
-                <ion-card-subtitle>{{film.vote_average | number: '1.0-2'}}<ion-icon name="star"></ion-icon></ion-card-subtitle>
-              </ion-col>
-              <ion-col size="9" size-xs="8">
-                <ion-card-header>
-                    <ion-card-title>
-                      {{(film.original_title ? (film.original_title | slice: 0:25) : (film.name | slice: 0:25)) +
-                        ((film.original_title && film.original_title.length > 25) || (film.name && film.name.length > 25) ? '...' : '')}}
-                    </ion-card-title>
-                </ion-card-header>
-              
-                <ion-card-content>
-                    {{film.overview |slice:0:80 }}{{ film.overview.length > 80 ? '...' : '' }}
-                </ion-card-content>
-                  <ion-button class="verMas" size="small" color="light" [routerLink]="['/detallelibro', film.id]">Ver más</ion-button>
-                  <ion-icon class="heart" name="heart" (click)="like(film)"
-                    [style.color]="favoritosService.esFavorito(film) ? 'red' : 'grey'"
-                    [ngClass]="{'clicked': favoritosService.esFavorito(film)}">
-                  </ion-icon>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <div *ngIf="results.length > 0">
+    <ion-grid >
+      <ion-row>
+        <ion-col size="12" size-lg="6" size-md="12" size-sm="12" size-xs="12" *ngFor="let film of results">
+          <ion-card>
+            <ion-grid>
+              <ion-row>
+                <ion-col size = "3">
+                  <ion-img  alt="'film.original_title'" [src]="'https://image.tmdb.org/t/p/w500' + film.poster_path"></ion-img>
+                  <ion-card-subtitle>{{film.vote_average | number: '1.0-2'}}<ion-icon name="star"></ion-icon></ion-card-subtitle>
+                </ion-col>
+                <ion-col size="9" size-xs="8">
+                  <ion-card-header>
+                      <ion-card-title>
+                        {{(film.original_title ? (film.original_title | slice: 0:25) : (film.name | slice: 0:25)) +
+                          ((film.original_title && film.original_title.length > 25) || (film.name && film.name.length > 25) ? '...' : '')}}
+                      </ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                      {{film.overview |slice:0:80 }}{{ film.overview.length > 80 ? '...' : '' }}
+                  </ion-card-content>
+                    <ion-button class="verMas" size="small" color="light" [routerLink]="['/detallelibro', film.id]">Ver más</ion-button>
+                    <ion-icon class="heart" name="heart" (click)="like(film)"
+                      [style.color]="favoritosService.esFavorito(film) ? 'red' : 'grey'"
+                      [ngClass]="{'clicked': favoritosService.esFavorito(film)}">
+                    </ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <p class="noResults" *ngIf="isSearching && results.length === 0">No hay resultados</p>
+
+  <div [hidden]="results.length > 0 || isSearching">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-lg="6" size-md="12" size-sm="12" size-xs="12" *ngFor="let film of filmsPorGenero">
+          <ion-card>
+            <ion-grid>
+              <ion-row>
+                <ion-col size = "3">
+                  <ion-img  alt="'film.original_title'" [src]="'https://image.tmdb.org/t/p/w500' + film.poster_path"></ion-img>
+                  <ion-card-subtitle>{{film.vote_average | number: '1.0-2'}}<ion-icon name="star"></ion-icon></ion-card-subtitle>
+                </ion-col>
+                <ion-col size="9" size-xs="8">
+                  <ion-card-header>
+                      <ion-card-title>
+                        {{(film.original_title ? (film.original_title | slice: 0:25) : (film.name | slice: 0:25)) +
+                          ((film.original_title && film.original_title.length > 25) || (film.name && film.name.length > 25) ? '...' : '')}}
+                      </ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                      {{film.overview |slice:0:80 }}{{ film.overview.length > 80 ? '...' : '' }}
+                  </ion-card-content>
+                    <ion-button class="verMas" size="small" color="light" [routerLink]="['/detallelibro', film.id]">Ver más</ion-button>
+                    <ion-icon class="heart" name="heart" (click)="like(film)"
+                      [style.color]="favoritosService.esFavorito(film) ? 'red' : 'grey'"
+                      [ngClass]="{'clicked': favoritosService.esFavorito(film)}">
+                    </ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
   <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
     <ion-infinite-scroll-content></ion-infinite-scroll-content>

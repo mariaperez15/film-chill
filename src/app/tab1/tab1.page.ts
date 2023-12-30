@@ -68,7 +68,6 @@ export class Tab1Page implements OnInit{
     console.log("search ejecutandose")
     console.log("estas buscando: " +  query)
     console.log(this.results)
-
 }
 
 }

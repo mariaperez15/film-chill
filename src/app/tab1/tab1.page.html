@@ -33,7 +33,7 @@
       </ion-grid>
   </div>
   
-  <p *ngIf="isSearching && results.length === 0">No hay resultados</p>
+  <p class="noResults" *ngIf="isSearching && results.length === 0">No hay resultados</p>
 
     <div [hidden]="results.length > 0 || isSearching">
       <app-films 
