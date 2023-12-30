@@ -69,4 +69,5 @@ export class CategoriasPage implements OnInit {
     console.log(film);
     this.favoritosService.guardarFavorito(film);
   }
+  
 }
