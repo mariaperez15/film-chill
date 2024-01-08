@@ -30,13 +30,14 @@ ion-card-subtitle{
     margin-top: 0.75rem;
     color: white;
 }
-ion-icon.heart{
+ion-icon.heart {
     font-size: 1.7rem;
     margin-right: -40%;
     cursor: pointer;
-    &:hover, &.clicked {
-        color: red;
-      }
+}
+
+ion-icon.heart:hover {
+    color: red !important;
 }
 ion-button{
     margin-right: 40%;
