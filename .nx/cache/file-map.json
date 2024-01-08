@@ -77,7 +77,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "16632298993938096453"
+        "hash": "18018881344913237713"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -161,7 +161,7 @@
       },
       {
         "file": "src/app/categorias/categorias.page.scss",
-        "hash": "17671722266337681223"
+        "hash": "8402323639251109443"
       },
       {
         "file": "src/app/categorias/categorias.page.spec.ts",
