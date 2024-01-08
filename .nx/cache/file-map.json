@@ -77,7 +77,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "12965674676375461235"
+        "hash": "16632298993938096453"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -125,7 +125,7 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "8106124506929993654"
+        "hash": "2117728983618561080"
       },
       {
         "file": "src/app/app.component.html",
@@ -148,16 +148,56 @@
         "hash": "3151066152438071548"
       },
       {
+        "file": "src/app/categorias/categorias-routing.module.ts",
+        "hash": "10358941157014069369"
+      },
+      {
+        "file": "src/app/categorias/categorias.module.ts",
+        "hash": "8818856358406096396"
+      },
+      {
+        "file": "src/app/categorias/categorias.page.html",
+        "hash": "9315822902461346521"
+      },
+      {
+        "file": "src/app/categorias/categorias.page.scss",
+        "hash": "17671722266337681223"
+      },
+      {
+        "file": "src/app/categorias/categorias.page.spec.ts",
+        "hash": "16705015361425912026"
+      },
+      {
+        "file": "src/app/categorias/categorias.page.ts",
+        "hash": "1902055582629064474"
+      },
+      {
         "file": "src/app/components/components.module.ts",
-        "hash": "5376884495538106535"
+        "hash": "16011030928028314139"
+      },
+      {
+        "file": "src/app/components/detalles-libro/detalles-libro.component.html",
+        "hash": "14476617527554544532"
+      },
+      {
+        "file": "src/app/components/detalles-libro/detalles-libro.component.scss",
+        "hash": "10748442326005830067"
+      },
+      {
+        "file": "src/app/components/detalles-libro/detalles-libro.component.spec.ts",
+        "hash": "815016549974406658"
+      },
+      {
+        "file": "src/app/components/detalles-libro/detalles-libro.component.ts",
+        "hash": "10637417858403719506"
       },
       {
         "file": "src/app/components/film/film.component.html",
-        "hash": "5742578013675781989"
+        "hash": "1738904165213797349"
       },
       {
         "file": "src/app/components/film/film.component.scss",
-        "hash": "15034020327543445939"
+        "hash": "2411988940453179350"
       },
       {
         "file": "src/app/components/film/film.component.spec.ts",
@@ -165,11 +205,11 @@
       },
       {
         "file": "src/app/components/film/film.component.ts",
-        "hash": "18294893729158143021"
+        "hash": "9481396655272141436"
       },
       {
         "file": "src/app/components/films/films.component.html",
-        "hash": "2325749427676131925"
+        "hash": "4082097409129726046"
       },
       {
         "file": "src/app/components/films/films.component.scss",
@@ -185,7 +225,7 @@
       },
       {
         "file": "src/app/components/search/search.component.html",
-        "hash": "2761854546927779378"
+        "hash": "16972042345751525160"
       },
       {
         "file": "src/app/components/search/search.component.scss",
@@ -197,7 +237,23 @@
       },
       {
         "file": "src/app/components/search/search.component.ts",
-        "hash": "5481391663360339424"
+        "hash": "14352190956549747641"
+      },
+      {
+        "file": "src/app/detalles-film.pipe.spec.ts",
+        "hash": "14636666333902445439"
+      },
+      {
+        "file": "src/app/detalles-film.pipe.ts",
+        "hash": "4052056071748510791"
+      },
+      {
+        "file": "src/app/detalles-libro.pipe.spec.ts",
+        "hash": "1219535739279795941"
+      },
+      {
+        "file": "src/app/detalles-libro.pipe.ts",
+        "hash": "14110939914735038406"
       },
       {
         "file": "src/app/explore-container/explore-container.component.html",
@@ -229,7 +285,7 @@
       },
       {
         "file": "src/app/services/favoritos.service.ts",
-        "hash": "3030475123043800187"
+        "hash": "16256156583386745914"
       },
       {
         "file": "src/app/services/films-api.service.spec.ts",
@@ -237,11 +293,11 @@
       },
       {
         "file": "src/app/services/films-api.service.ts",
-        "hash": "682975092958120029"
+        "hash": "13212159069653951900"
       },
       {
         "file": "src/app/tab1/tab1-routing.module.ts",
-        "hash": "11381973081829977082"
+        "hash": "8716222984336494336"
       },
       {
         "file": "src/app/tab1/tab1.module.ts",
@@ -249,11 +305,11 @@
       },
       {
         "file": "src/app/tab1/tab1.page.html",
-        "hash": "12287121067706517248"
+        "hash": "1816304278762054350"
       },
       {
         "file": "src/app/tab1/tab1.page.scss",
-        "hash": "1052953214749784777"
+        "hash": "1582434170107999593"
       },
       {
         "file": "src/app/tab1/tab1.page.spec.ts",
@@ -261,7 +317,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.ts",
-        "hash": "5834494113102697924"
+        "hash": "14554513113914248447"
       },
       {
         "file": "src/app/tab2/tab2-routing.module.ts",
@@ -273,11 +329,11 @@
       },
       {
         "file": "src/app/tab2/tab2.page.html",
-        "hash": "6563611001746290211"
+        "hash": "10624361273059804483"
       },
       {
         "file": "src/app/tab2/tab2.page.scss",
-        "hash": "8597106532363060202"
+        "hash": "10312467893761657286"
       },
       {
         "file": "src/app/tab2/tab2.page.spec.ts",
@@ -285,7 +341,7 @@
       },
       {
         "file": "src/app/tab2/tab2.page.ts",
-        "hash": "2334251754340865490"
+        "hash": "6335605056736074054"
       },
       {
         "file": "src/app/tab3/tab3-routing.module.ts",
@@ -297,11 +353,11 @@
       },
       {
         "file": "src/app/tab3/tab3.page.html",
-        "hash": "6046113050020736106"
+        "hash": "11723367469465400687"
       },
       {
         "file": "src/app/tab3/tab3.page.scss",
-        "hash": "11532153515238214177"
+        "hash": "16635601877070841632"
       },
       {
         "file": "src/app/tab3/tab3.page.spec.ts",
@@ -309,35 +365,11 @@
       },
       {
         "file": "src/app/tab3/tab3.page.ts",
-        "hash": "9950996585213729156"
-      },
-      {
-        "file": "src/app/tab4/tab4-routing.module.ts",
-        "hash": "3111027089840694215"
-      },
-      {
-        "file": "src/app/tab4/tab4.module.ts",
-        "hash": "11462969073136609784"
-      },
-      {
-        "file": "src/app/tab4/tab4.page.html",
-        "hash": "7848397769136442853"
-      },
-      {
-        "file": "src/app/tab4/tab4.page.scss",
-        "hash": "6882076416236189089"
-      },
-      {
-        "file": "src/app/tab4/tab4.page.spec.ts",
-        "hash": "695736110775980736"
-      },
-      {
-        "file": "src/app/tab4/tab4.page.ts",
-        "hash": "17700752777818138552"
+        "hash": "14104055355233095563"
       },
       {
         "file": "src/app/tabs/tabs-routing.module.ts",
-        "hash": "17707947789601400792"
+        "hash": "7044889794849427242"
       },
       {
         "file": "src/app/tabs/tabs.module.ts",
@@ -345,7 +377,7 @@
       },
       {
         "file": "src/app/tabs/tabs.page.html",
-        "hash": "13159385292866411058"
+        "hash": "10667690041704238274"
       },
       {
         "file": "src/app/tabs/tabs.page.scss",
@@ -381,7 +413,7 @@
       },
       {
         "file": "src/index.html",
-        "hash": "5962093970713772175"
+        "hash": "13397203116751725702"
       },
       {
         "file": "src/main.ts",
