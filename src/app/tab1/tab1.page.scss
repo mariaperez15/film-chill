@@ -13,14 +13,20 @@ ion-content {
 }
 
 .titulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #1a2980, #26d0ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-left: 20rem;
-    text-shadow: 2px 2px 4px rgba(134, 132, 132, 0.5); 
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
   
 ion-toolbar{
