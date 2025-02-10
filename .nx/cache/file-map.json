@@ -256,26 +256,6 @@
         "hash": "14110939914735038406"
       },
       {
-        "file": "src/app/explore-container/explore-container.component.html",
-        "hash": "10574455846506954855"
-      },
-      {
-        "file": "src/app/explore-container/explore-container.component.scss",
-        "hash": "14250411118003398491"
-      },
-      {
-        "file": "src/app/explore-container/explore-container.component.spec.ts",
-        "hash": "5993597563574967271"
-      },
-      {
-        "file": "src/app/explore-container/explore-container.component.ts",
-        "hash": "5919589360752874304"
-      },
-      {
-        "file": "src/app/explore-container/explore-container.module.ts",
-        "hash": "7418061059857182964"
-      },
-      {
         "file": "src/app/interfaces/interfaces.ts",
         "hash": "9242512891175373570"
       },
