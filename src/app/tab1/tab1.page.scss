@@ -30,7 +30,7 @@ ion-content {
   
 ion-toolbar{
     --opacity: 95%;
-
+    height: 5rem;
 }
 .noResults{
     color: white;
@@ -38,6 +38,10 @@ ion-toolbar{
 }
 
 .custom-toolbar{
-    --background: rgb(24, 23, 23);
+    --background: rgb(32, 33, 32); 
     --color: #fff;  
+}
+
+ion-header {
+    margin-bottom: 1rem;
 }

@@ -14,13 +14,30 @@ ion-content {
     }
 }
 
-.miLista{
-    font-size: 1.7rem;
-    margin-top: 0.3rem;
+.titulo {
+    margin-top: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #1a2980, #26d0ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; 
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 ion-toolbar{
     text-align: center; 
     height: 4rem;
     --opacity: 95%;
 }
 
+.custom-toolbar{
+    --background: rgb(32, 33, 32); 
+    --color: #fff;  
+}
