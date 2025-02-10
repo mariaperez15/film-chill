@@ -43,7 +43,7 @@
                   <ion-card-content>
                       {{film.overview |slice:0:80 }}{{ film.overview.length > 80 ? '...' : '' }}
                   </ion-card-content>
-                    <ion-button class="verMas" size="small" color="light" [routerLink]="['/detallelibro', film.id]">Ver más</ion-button>
+                    <ion-button class="verMas" size="small" color="light" [routerLink]="['/filmdetails', film.id]">Ver más</ion-button>
                     <ion-icon class="heart" name="heart" (click)="like(film)"
                       [style.color]="favoritosService.esFavorito(film) ? 'red' : 'grey'"
                       [ngClass]="{'clicked': favoritosService.esFavorito(film)}">
@@ -81,7 +81,7 @@
                   <ion-card-content>
                       {{film.overview |slice:0:80 }}{{ film.overview.length > 80 ? '...' : '' }}
                   </ion-card-content>
-                    <ion-button class="verMas" size="small" color="light" [routerLink]="['/detallelibro', film.id]">Ver más</ion-button>
+                    <ion-button class="verMas" size="small" color="light" [routerLink]="['/filmdetails', film.id]">Ver más</ion-button>
                     <ion-icon class="heart" name="heart" (click)="like(film)"
                       [style.color]="favoritosService.esFavorito(film) ? 'red' : 'grey'"
                       [ngClass]="{'clicked': favoritosService.esFavorito(film)}">

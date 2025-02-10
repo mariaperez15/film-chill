@@ -7,11 +7,11 @@ import { Location } from '@angular/common';
 
 
 @Component({
-  selector: 'app-detalles-libro',
-  templateUrl: './detalles-libro.component.html',
-  styleUrls: ['./detalles-libro.component.scss'],
+  selector: 'app-film-details',
+  templateUrl: './film-details.component.html',
+  styleUrls: ['./film-details.component.scss'],
 })
-export class DetallesLibroComponent  implements OnInit {
+export class FilmDetailsComponent  implements OnInit {
 
   @Input() film!: Film;
   movie: Film | undefined;

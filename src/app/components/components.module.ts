@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { FilmsComponent } from './films/films.component';
 import { FilmComponent } from './film/film.component';
-import { DetallesLibroComponent } from './detalles-libro/detalles-libro.component';
+import { FilmDetailsComponent } from './film-details/film-details.component';
 import { RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 
@@ -15,7 +15,7 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     FilmComponent,
     FilmsComponent,
-    DetallesLibroComponent,
+    FilmDetailsComponent,
     SearchComponent
   ],
   imports: [
@@ -28,7 +28,7 @@ import { SearchComponent } from './search/search.component';
   exports: [
     FilmsComponent,
     FilmComponent,
-    DetallesLibroComponent,
+    FilmDetailsComponent,
     SearchComponent
   ]
 })

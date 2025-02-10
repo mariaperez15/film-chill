@@ -176,19 +176,19 @@
         "hash": "16011030928028314139"
       },
       {
-        "file": "src/app/components/detalles-libro/detalles-libro.component.html",
+        "file": "src/app/components/film-details/film-details.component.html",
         "hash": "14476617527554544532"
       },
       {
-        "file": "src/app/components/detalles-libro/detalles-libro.component.scss",
+        "file": "src/app/components/film-details/film-details.component.scss",
         "hash": "10748442326005830067"
       },
       {
-        "file": "src/app/components/detalles-libro/detalles-libro.component.spec.ts",
+        "file": "src/app/components/film-details/film-details.component.spec.ts",
         "hash": "815016549974406658"
       },
       {
-        "file": "src/app/components/detalles-libro/detalles-libro.component.ts",
+        "file": "src/app/components/film-details/film-details.component.ts",
         "hash": "10637417858403719506"
       },
       {
@@ -248,11 +248,11 @@
         "hash": "4052056071748510791"
       },
       {
-        "file": "src/app/detalles-libro.pipe.spec.ts",
+        "file": "src/app/film-details.pipe.spec.ts",
         "hash": "1219535739279795941"
       },
       {
-        "file": "src/app/detalles-libro.pipe.ts",
+        "file": "src/app/film-details.pipe.ts",
         "hash": "14110939914735038406"
       },
       {

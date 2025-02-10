@@ -1,8 +1,8 @@
-import { DetallesLibroPipe } from './detalles-libro.pipe';
+import { DetallesFilmPipe } from './detalles-film.pipe';
 
-describe('DetallesLibroPipe', () => {
+describe('FilmDetailsPipe', () => {
   it('create an instance', () => {
-    const pipe = new DetallesLibroPipe();
+    const pipe = new DetallesFilmPipe();
     expect(pipe).toBeTruthy();
   });
 });

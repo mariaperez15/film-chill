@@ -66,3 +66,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignorar archivos de entorno de Angular
+src/environments/environment.ts
+
+# Ignorar archivos de configuración sensibles
+.env
