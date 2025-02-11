@@ -56,3 +56,28 @@ ion-toolbar {
     color: white;
     font-size: 1.3rem;
 }
+
+.custom-toolbar{
+    --background: rgb(32, 33, 32); 
+    --color: #fff;  
+}
+
+.back-button {
+    color: white !important; 
+  }
+
+  .titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #1a2980, #26d0ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
